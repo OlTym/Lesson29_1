@@ -13,11 +13,9 @@ public class GreetingController {
     public String main(@RequestParam(name = "title", required = false) String title,
                        @RequestParam(name = "text", required = false) String text,
                        Map<String, Object> model) {
-
         model.put("title", title);
         model.put("text", text);
 
         return "main";
     }
-
 }
